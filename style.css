@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.card {
+    display: flex;
+    padding: 3%;
+    border-bottom: 0.1rem solid grey;
+}
+
+.card div {
+    padding: 40px;
+    text-align: justify;
+}
+
+header {
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    background-image:
+        url(https://c4.wallpaperflare.com/wallpaper/62/209/217/white-and-brown-yawning-owl-standing-on-brown-wood-branch-wallpaper-preview.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+   animation: transition-between-colors 9s infinite alternate-reverse;
+    -webkit-animation:transition-between-colors 9s infinite alternate-reverse;
+  
+}
+
+@keyframes transition-between-colors {
+    from{
+        background-color: #73738d;
+        background-blend-mode: saturation;
+        transition: 1s all;
+    }
+    to{
+        background-color: #8e3f65;
+        background-blend-mode: saturation;
+        transition: 1s all;
+    }
+}
+.div-header {
+    background-color: rgba(0, 0, 0, 0.392);
+    display: flex;
+    justify-content: space-between;
+    padding: 4%;
+    flex-direction: row-reverse;
+    font-weight: 900;
+    font-size: 1rem;
+    transition: 0.5s linear;
+    position: fixed;
+    width: 100%;
+
+}
+
+.div-header:hover {
+    color: #5b88a5;
+    background-color: #f4f4f2;
+}
+
+.section-header {
+
+    color: white;
+    background-color: black transparent;
+    padding: 30%;
+    font-size: 1.2rem;
+
+}
+
+.section-header p {
+    text-align: justify;
+}
+
+.redes img {
+    height: 20px;
+    width: 20px;
+    padding: 2px;
+}
+
+.redes {
+    background-color: #000000;
+    color: white;
+    padding: 30px;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+#Copyright {
+    background-color: #615c5c;
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+
+.container {
+    padding: 3%;
+}
+
+#toggle-mode {
+    padding: 15px;
+    border-radius: 30px;
+    border-style: none;
+    background-color: #696969;
+    color: aliceblue;
+    font-weight: 600;
+    transition: 0.9s linear;
+    cursor: pointer;
+}
+
+#toggle-mode:hover {
+    background-color: #8fa080;
+
+}
+
+.dark-mode header {
+    background-color: rgba(0, 0, 0, 0.559);
+    background-blend-mode: saturation;
+    transition: 0.8s all;
+}
+
+.dark-mode {
+    background-color: #000000;
+    color: aliceblue;
+    transition: 0.7s linear;
+}
+
+.dark-mode .redes {
+    background-color: #5d5d5d;
+}
+
+.dark-mode #toggle-mode {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode #toggle-mode:hover {
+    background-color: #8fa080;
+}
